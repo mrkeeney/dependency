@@ -860,7 +860,7 @@
       <xs:attribute name="type" use="required" type="ContentType"/>
       <xs:attribute name="media" type="MediaDesc"/>
       <xs:attribute name="title" type="Text"/>
-      <xs:attribute ref="xml:space" fixed="preserve"/>
+      <!-- xs:attribute ref="xml:space" fixed="preserve"/ -->
     </xs:complexType>
   </xs:element>
 
@@ -883,7 +883,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute ref="xml:space" fixed="preserve"/>
+      <!-- xs:attribute ref="xml:space" fixed="preserve"/ -->
     </xs:complexType>
   </xs:element>
 
@@ -1340,7 +1340,7 @@
         <xs:extension base="pre.content">
           <xs:attributeGroup ref="attrs"/>
           <xs:attribute name="width" type="Number"/>
-          <xs:attribute ref="xml:space" fixed="preserve"/>
+          <!-- xs:attribute ref="xml:space" fixed="preserve"/ -->
         </xs:extension>
       </xs:complexContent>
     </xs:complexType>
