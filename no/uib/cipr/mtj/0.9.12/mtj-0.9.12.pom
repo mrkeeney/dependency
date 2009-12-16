@@ -1,0 +1,8 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>no.uib.cipr</groupId>
+  <artifactId>mtj</artifactId>
+  <name>Matrix Toolkit for Java</name>
+  <version>0.9.12</version>
+  <url>http://code.google.com/p/matrix-toolkits-java</url>
+</project>
