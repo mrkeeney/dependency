@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+<TITLE>Package edu.rit.pj</TITLE>
+</HEAD>
+<BODY>
+
+Package edu.rit.pj contains Parallel Java (PJ),
+an API and middleware for parallel programming in 100% Java
+on shared memory multiprocessor (SMP) parallel computers,
+cluster parallel computers,
+and hybrid SMP cluster parallel computers.
+
+<P>
+PJ includes the following classes for thread-based parallel programming
+inspired by the OpenMP standard.
+<UL>
+<LI>Class <A HREF="ParallelTeam.html">ParallelTeam</A>
+<LI>Class <A HREF="ParallelConstruct.html">ParallelConstruct</A>
+<LI>Class <A HREF="ParallelRegion.html">ParallelRegion</A>
+<LI>Class <A HREF="ParallelForLoop.html">ParallelForLoop</A>
+<UL>
+<LI>Class <A HREF="IntegerForLoop.html">IntegerForLoop</A>
+<LI>Class <A HREF="IntegerStrideForLoop.html">IntegerStrideForLoop</A>
+<LI>Class <A HREF="LongForLoop.html">LongForLoop</A>
+<LI>Class <A HREF="LongStrideForLoop.html">LongStrideForLoop</A>
+</UL>
+<LI>Class <A HREF="Schedule.html">Schedule</A>
+<UL>
+<LI>Class <A HREF="IntegerSchedule.html">IntegerSchedule</A>
+<LI>Class <A HREF="LongSchedule.html">LongSchedule</A>
+</UL>
+<LI>Class <A HREF="ParallelIteration.html">ParallelIteration</A>
+<LI>Class <A HREF="ParallelSection.html">ParallelSection</A>
+<LI>Class <A HREF="BarrierAction.html">BarrierAction</A>
+<LI>Class <A HREF="Lock.html">Lock</A>
+<LI>Thread safe shared reduction variable classes in package
+<A HREF="reduction/package-summary.html">edu.rit.pj.reduction</A>
+<LI>Binary operation classes for parallel reduction in package
+<A HREF="reduction/package-summary.html">edu.rit.pj.reduction</A>
+<LI>Class <A HREF="PJProperties.html">PJProperties</A>
+</UL>
+When such a program runs on an SMP parallel computer,
+the Java Virtual Machine (JVM)
+schedules each thread on a separate processor,
+thus executing the program in parallel.
+Although PJ achieves the same effect as OpenMP,
+PJ programs are coded differently from OpenMP programs.
+OpenMP uses pragmas or directives
+that must be translated by a precompiler.
+PJ uses Java classes and needs no precompiler.
+
+<P>
+PJ includes the following classes for message passing parallel programming
+inspired by the MPI standard.
+<UL>
+<LI>Class <A HREF="Comm.html">Comm</A>
+<LI>Class <A HREF="CommRequest.html">CommRequest</A>
+<LI>Class <A HREF="CommStatus.html">CommStatus</A>
+<LI>Class <A HREF="../mp/Buf.html">Buf</A> and its subclasses in package <A HREF="../mp/package-summary.html">edu.rit.mp</A>
+<LI>Item, array, and matrix buffer classes in package <A HREF="../mp/buf/package-summary.html">edu.rit.mp.buf</A>
+<LI>Binary operation classes for parallel reduction in package
+<A HREF="reduction/package-summary.html">edu.rit.pj.reduction</A>
+<LI>Class <A HREF="PJProperties.html">PJProperties</A>
+</UL>
+
+<P>
+PJ includes the following classes
+that provide the <I>master-worker</I> pattern
+for automatic loop partitioning and load balancing
+in message passing parallel programs.
+<UL>
+<LI>Class <A HREF="WorkerTeam.html">WorkerTeam</A>
+	<UL>
+	<LI>Class <A HREF="HybridTeam.html">HybridTeam</A>
+	</UL>
+<LI>Class <A HREF="WorkerConstruct.html">WorkerConstruct</A>
+<LI>Class <A HREF="WorkerRegion.html">WorkerRegion</A>
+<LI>Class <A HREF="WorkerForLoop.html">WorkerForLoop</A>
+	<UL>
+	<LI>Class <A HREF="WorkerIntegerForLoop.html">WorkerIntegerForLoop</A>
+	<LI>Class <A HREF="WorkerIntegerStrideForLoop.html">WorkerIntegerStrideForLoop</A>
+	<LI>Class <A HREF="WorkerLongForLoop.html">WorkerLongForLoop</A>
+	<LI>Class <A HREF="WorkerLongStrideForLoop.html">WorkerLongStrideForLoop</A>
+	</UL>
+</UL>
+
+<P>
+When such a program runs on a cluster parallel computer,
+the PJ message passing middleware
+runs multiple copies of the program,
+each in its own process
+on a different backend processor of the cluster,
+thus executing the program in parallel.
+PJ's message passing API is similar to that of MPI,
+except PJ's is an object oriented Java API.
+
+<P>
+For further information about the PJ message passing middleware,
+see package <A HREF="cluster/package-summary.html">edu.rit.pj.cluster</A>.
+
+<P>
+For further information about OpenMP,
+see the OpenMP Home Page
+(<A HREF="http://www.openmp.org/" TARGET="_top">http://www.openmp.org/</A>).
+
+<P>
+For further information about MPI,
+see the MPI Standard
+(<A HREF="http://www-unix.mcs.anl.gov/mpi/" TARGET="_top">http://www-unix.mcs.anl.gov/mpi/</A>).
+
+</BODY>
+</HTML>
