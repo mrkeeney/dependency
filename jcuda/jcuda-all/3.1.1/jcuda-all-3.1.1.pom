@@ -3,6 +3,6 @@
   <groupId>jcuda</groupId>
   <artifactId>jcuda-all</artifactId>
   <name>Java CUDA Wrappers</name>
-  <version>3.1.0</version>
+  <version>3.1.1</version>
   <url>http://www.jcuda.org</url>
 </project>
