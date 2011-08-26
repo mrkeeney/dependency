@@ -4,4 +4,14 @@ v. 1.1 is from February 18, 2010
 v. 1.2 is from April 22, 2010
 v. 1.3 is from October 22, 2010
 v. 1.4 is from March 15, 2011
+v. 1.5 is from August 9, 2011
+
+One Modification edu.rit.pj.cluster.JobBackend from:
+Class<?> mainclass = Class.forName(theJobBackend.getMainClassName(), true,
+theJobBackend.getClassLoader());
+
+To:
+Class<?> mainclass = Class.forName(theJobBackend.getMainClassName(), true,
+                                 ClassLoader.getSystemClassLoader());
+
 
