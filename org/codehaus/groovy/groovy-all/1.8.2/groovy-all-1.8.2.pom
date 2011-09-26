@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>org.codehaus.groovy</groupId>
+    <artifactId>groovy-all</artifactId>
+    <name>Groovy</name>
+    <packaging>jar</packaging>
+    
+    <version>1.8.2</version>
+
+    <description>
+        Groovy: A powerful, dynamic language for the JVM
+    </description>
+
+    <url>http://groovy.codehaus.org/</url>
+
+    <organization>
+        <name>The Codehaus</name>
+        <url>http://codehaus.org</url>
+    </organization>
+
+    <inceptionYear>2003</inceptionYear>
+
+</project>
