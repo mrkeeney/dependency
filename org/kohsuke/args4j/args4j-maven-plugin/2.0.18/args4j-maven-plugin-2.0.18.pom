@@ -5,6 +5,7 @@
   <artifactId>args4j-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
   <name>Args4j Maven Plugin</name>
+  <version>2.0.18</version>
   <prerequisites>
     <maven>2.0</maven>
   </prerequisites>
