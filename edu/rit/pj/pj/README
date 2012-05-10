@@ -5,13 +5,14 @@ v. 1.2 is from April 22, 2010
 v. 1.3 is from October 22, 2010
 v. 1.4 is from March 15, 2011
 v. 1.5 is from August 9, 2011
+v. 1.6 is from April 1, 2012
 
-One Modification edu.rit.pj.cluster.JobBackend from:
-Class<?> mainclass = Class.forName(theJobBackend.getMainClassName(), true,
-theJobBackend.getClassLoader());
+We have modified edu.rit.pj.cluster.JobBackend to use the SystemClassLoader, which is ffx.FFXClassLoader in our case:
+
+From:
+Class<?> mainclass = Class.forName(theJobBackend.getMainClassName(), true, theJobBackend.getClassLoader());
 
 To:
-Class<?> mainclass = Class.forName(theJobBackend.getMainClassName(), true,
-                                 ClassLoader.getSystemClassLoader());
+Class<?> mainclass = Class.forName(theJobBackend.getMainClassName(), true, ClassLoader.getSystemClassLoader());
 
 
