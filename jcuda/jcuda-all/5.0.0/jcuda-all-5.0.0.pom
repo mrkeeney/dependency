@@ -1,0 +1,8 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jcuda</groupId>
+  <artifactId>jcuda-all</artifactId>
+  <name>Java CUDA Wrappers</name>
+  <version>5.0.0</version>
+  <url>http://www.jcuda.org</url>
+</project>
