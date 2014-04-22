@@ -1,0 +1,7 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jfluid</groupId>
+  <artifactId>jfluid-server-15</artifactId>
+  <name>JFluid Server 15</name>
+  <version>8.0</version>
+</project>

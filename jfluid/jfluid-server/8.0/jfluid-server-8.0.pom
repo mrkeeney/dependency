@@ -1,0 +1,20 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jfluid</groupId>
+  <artifactId>jfluid-server</artifactId>
+  <name>JFluid Server</name>
+  <version>8.0</version>
+  <dependencies>
+    <dependency>
+      <groupId>jfluid</groupId>
+      <artifactId>jfluid-server-15</artifactId>
+      <version>8.0</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>jfluid</groupId>
+      <artifactId>jfluid-server-cvm</artifactId>
+      <version>8.0</version>
+      <type>jar</type>
+    </dependency>
+</project>
