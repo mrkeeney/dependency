@@ -1,8 +1,0 @@
-<project>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>jclfft</groupId>
-  <artifactId>jclfft</artifactId>
-  <name>Java OpenCL FFT</name>
-  <version>1.0</version>
-  <url>http://ffx.eng.uiowa.edu</url>
-</project>
