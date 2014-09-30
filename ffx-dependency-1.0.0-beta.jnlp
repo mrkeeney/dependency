@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp codebase="https://kenai.com/projects/ffx/sources/dependency/content/"
+      href="ffx-dependency-1.0.0-beta.jnlp" version="1.0.0-beta">
+  <information>
+    <title>Force Field X Dependency Libraries</title>
+    <vendor>The Schnieders Lab at The University of Iowa</vendor>
+    <homepage href="http://ffx.eng.uiowa.edu/"/>
+    <description>Software for Computational Molecular Biophysics</description>
+    <description kind="short">Software for Computational Molecular Biophysics</description>
+    <offline-allowed/>
+  </information>
+  <update check="background" policy="always"/>
+  <security>
+      <all-permissions/>
+  </security>
+    <resources>
+        <jar href="dependency/java3d/j3dcore/1.6.3/j3dcore-1.6.3.jar"/>
+        <jar href="dependency/java3d/j3dutils/1.6.3/j3dutils-1.6.3.jar"/>
+        <jar href="dependency/java3d/vecmath/1.6.3/vecmath-1.6.3.jar"/>
+        <jar href="dependency/java3d/j3dvrml/1.6.3/j3dvrml-1.6.3.jar"/>
+        <jar href="dependency/commons-cli/commons-cli/1.2.0/commons-cli-1.2.0.jar"/>
+        <jar href="dependency/commons-configuration/commons-configuration/1.9/commons-configuration-1.9.jar"/>
+        <jar href="dependency/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+        <jar href="dependency/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+        <jar href="dependency/commons-lang/commons-lang3/3.3.2/commons-lang3-3.3.2.jar"/>
+        <jar href="dependency/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+        <jar href="dependency/commons-math/commons-math3/3.3/commons-math3-3.3.jar"/>
+        <jar href="dependency/edu/rit/pj/pj/1.7/pj-1.7.jar"/>
+        <jar href="dependency/javax/help/javahelp/2.0.05/javahelp-2.0.05.jar"/>
+        <jar href="dependency/org/codehaus/groovy/groovy-all/2.3.6/groovy-all-2.3.6.jar"/>
+    </resources>
+  <component-desc />
+</jnlp>
