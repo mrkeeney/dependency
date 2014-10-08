@@ -7,6 +7,7 @@ v. 1.4 is from March 15, 2011
 v. 1.5 is from August 9, 2011
 v. 1.6 is from April 1, 2012
 v. 1.7 is from June 20, 2012
+v. 1.8 is includes Jacob's fix to allow destroying ParallelTeam instances.
 
 We have modified edu.rit.pj.cluster.JobBackend to use the SystemClassLoader, which is ffx.FFXClassLoader in our case:
 
