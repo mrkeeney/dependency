@@ -14,10 +14,10 @@
       <all-permissions/>
   </security>
     <resources>
-        <jar href="java3d/j3dcore/1.6.3/j3dcore-1.6.3.jar"/>
-        <jar href="java3d/j3dutils/1.6.3/j3dutils-1.6.3.jar"/>
-        <jar href="java3d/vecmath/1.6.3/vecmath-1.6.3.jar"/>
-        <jar href="java3d/j3dvrml/1.6.3/j3dvrml-1.6.3.jar"/>
+        <jar href="java3d/j3dcore/1.6.4/j3dcore-1.6.4.jar"/>
+        <jar href="java3d/j3dutils/1.6.4/j3dutils-1.6.4.jar"/>
+        <jar href="java3d/vecmath/1.6.4/vecmath-1.6.4.jar"/>
+        <jar href="java3d/j3dvrml/1.6.4/j3dvrml-1.6.4.jar"/>
         <jar href="commons-cli/commons-cli/1.2.0/commons-cli-1.2.0.jar"/>
         <jar href="commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar"/>
         <jar href="commons-io/commons-io/2.4/commons-io-2.4.jar"/>
