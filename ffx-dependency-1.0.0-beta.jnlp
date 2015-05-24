@@ -26,7 +26,7 @@
         <jar href="commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
         <jar href="commons-math/commons-math3/3.5/commons-math3-3.5.jar"/>
         <jar href="javax/help/javahelp/2.0.05/javahelp-2.0.05.jar"/>
-        <jar href="org/codehaus/groovy/groovy-all/2.4.3/groovy-all-2.4.3.jar"/>
+        <jar href="org/codehaus/groovy/groovy-all/2.3.6/groovy-all-2.3.6.jar"/>
     </resources>
   <component-desc />
 </jnlp>
