@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp codebase="https://github.com/mjschnie/dependency/blob/master/"
+<jnlp codebase="https://github.com/mjschnie/dependency/raw/master/"
       href="ffx-dependency-1.0.0-beta.jnlp" version="1.0.0-beta">
   <information>
     <title>Force Field X Dependency Libraries</title>
