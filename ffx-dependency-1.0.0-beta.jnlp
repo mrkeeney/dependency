@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp codebase="https://kenai.com/projects/ffx/sources/dependency-repo/content/"
+<jnlp codebase="https://github.com/mjschnie/dependency/blob/master/"
       href="ffx-dependency-1.0.0-beta.jnlp" version="1.0.0-beta">
   <information>
     <title>Force Field X Dependency Libraries</title>
     <vendor>The Schnieders Lab at The University of Iowa</vendor>
-    <homepage href="http://ffx.eng.uiowa.edu/"/>
+    <homepage href="http://ffx.biochem.uiowa.edu/"/>
     <description>Software for Computational Molecular Biophysics</description>
     <description kind="short">Software for Computational Molecular Biophysics</description>
     <offline-allowed/>
