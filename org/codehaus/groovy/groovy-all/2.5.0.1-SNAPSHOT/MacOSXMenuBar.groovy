@@ -57,8 +57,14 @@ return handler
     }
 }
 
+def char fileChar = 'F';
+def char editChar = 'E';
+def char viewChar = 'V';
+def char hisChar = 'I';
+def char scriptChar = 'S';
+
 menuBar {
-    menu(text: 'File') {
+    menu(text: 'File', mnemonic: fileChar) {
         menuItem(newFileAction, icon:null)
         menuItem(newWindowAction, icon:null)
         menuItem(openAction, icon:null)
@@ -69,7 +75,7 @@ menuBar {
         menuItem(printAction, icon:null)
     }
 
-    menu(text: 'Edit') {
+    menu(text: 'Edit', mnemonic: editChar) {
         menuItem(undoAction, icon:null)
         menuItem(redoAction, icon:null)
         separator()
@@ -85,10 +91,9 @@ menuBar {
         menuItem(selectAllAction, icon:null)
 	separator()
 	menuItem(commentAction, icon:null)
-        // menuItem(selectBlockAction, icon:null)
     }
 
-    menu(text: 'View') {
+    menu(text: 'View', mnemonic: viewChar) {
         menuItem(clearOutputAction, icon:null)
         separator()
         menuItem(largerFontAction, icon:null)
@@ -104,12 +109,12 @@ menuBar {
         checkBoxMenuItem(autoClearOutputAction, selected: controller.autoClearOutput)
     }
 
-    menu(text: 'History') {
+    menu(text: 'History', mnemonic: hisChar) {
         menuItem(historyPrevAction, icon:null)
         menuItem(historyNextAction, icon:null)
     }
 
-    menu(text: 'Script') {
+    menu(text: 'Script', mnemonic: scriptChar) {
         menuItem(runAction, icon:null)
         checkBoxMenuItem(saveOnRunAction, selected: controller.saveOnRun)
         menuItem(runSelectionAction, icon:null)
@@ -124,7 +129,6 @@ menuBar {
         menuItem(inspectLastAction, icon:null)
         menuItem(inspectVariablesAction, icon:null)
         menuItem(inspectAstAction, icon:null)
-        // menuItem(inspectTokensAction, icon:null)
     }
 }
 
