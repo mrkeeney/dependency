@@ -1,6 +1,8 @@
 
 -limitComments
 
+-skipDeprecated
+
 -runtime JNA   
 
 -mode StandaloneJar
