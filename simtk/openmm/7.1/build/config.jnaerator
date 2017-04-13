@@ -1,7 +1,7 @@
 
 -limitComments
 
--runtime BridJ 
+-runtime JNA   
 
 -mode StandaloneJar
 
@@ -18,7 +18,7 @@
 -libFile lib/plugins/libOpenMMCuda.dylib
 -libFile lib/plugins/libOpenMMOpenCL.dylib
 
-/usr/local/openmm/include/OpenMMCWrapper.h
+include/OpenMMCWrapper.h
 
 -library OpenMMAmoeba
 
