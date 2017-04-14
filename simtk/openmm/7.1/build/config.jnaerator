@@ -30,5 +30,5 @@ include/OpenMMCWrapper.h
 -libFile lib/plugins/libOpenMMAmoebaCuda.dylib
 -libFile lib/plugins/libOpenMMAmoebaReference.dylib
 
-/usr/local/openmm/include/AmoebaOpenMMCWrapper.h
+include/AmoebaOpenMMCWrapper.h
 

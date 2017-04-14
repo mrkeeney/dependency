@@ -11,10 +11,6 @@ MODULE OpenMM_Types
         integer*8 :: handle = 0
     end type
 
-    type OpenMM_AmoebaAngleTorsionForce
-        integer*8 :: handle = 0
-    end type
-
     type OpenMM_AmoebaBondForce
         integer*8 :: handle = 0
     end type
@@ -40,10 +36,6 @@ MODULE OpenMM_Types
     end type
 
     type OpenMM_AmoebaStretchBendForce
-        integer*8 :: handle = 0
-    end type
-
-    type OpenMM_AmoebaStretchTorsionForce
         integer*8 :: handle = 0
     end type
 
@@ -208,117 +200,6 @@ quadraticK)
             use OpenMM_Types; implicit none
             type (OpenMM_AmoebaAngleForce) target
             integer*4 OpenMM_AmoebaAngleForce_usesPeriodicBoundaryConditions
-        end function
-
-        ! OpenMM::AmoebaAngleTorsionForce
-        subroutine OpenMM_AmoebaAngleTorsionForce_create(result)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaAngleTorsionForce) result
-        end subroutine
-        subroutine OpenMM_AmoebaAngleTorsionForce_destroy(destroy)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaAngleTorsionForce) destroy
-        end subroutine
-        function OpenMM_AmoebaAngleTorsionForce_getNumAngleTorsions(target)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaAngleTorsionForce) target
-            integer*4 OpenMM_AmoebaAngleTorsionForce_getNumAngleTorsions
-        end function
-        function OpenMM_AmoebaAngleTorsionForce_addAngleTorsion(target, particle1, &
-particle2, &
-particle3, &
-particle4, &
-angleCBA, &
-angleDCB, &
-k1, &
-k2, &
-k3, &
-k4, &
-k5, &
-k6)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaAngleTorsionForce) target
-            integer*4 particle1
-            integer*4 particle2
-            integer*4 particle3
-            integer*4 particle4
-            real*8 angleCBA
-            real*8 angleDCB
-            real*8 k1
-            real*8 k2
-            real*8 k3
-            real*8 k4
-            real*8 k5
-            real*8 k6
-            integer*4 OpenMM_AmoebaAngleTorsionForce_addAngleTorsion
-        end function
-        subroutine OpenMM_AmoebaAngleTorsionForce_getAngleTorsionParameters(target, index, &
-particle1, &
-particle2, &
-particle3, &
-particle4, &
-angleCBA, &
-angleDCB, &
-k1, &
-k2, &
-k3, &
-k4, &
-k5, &
-k6)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaAngleTorsionForce) target
-            integer*4 index
-            integer*4 particle1
-            integer*4 particle2
-            integer*4 particle3
-            integer*4 particle4
-            real*8 angleCBA
-            real*8 angleDCB
-            real*8 k1
-            real*8 k2
-            real*8 k3
-            real*8 k4
-            real*8 k5
-            real*8 k6
-        end subroutine
-        subroutine OpenMM_AmoebaAngleTorsionForce_setAngleTorsionParameters(target, index, &
-particle1, &
-particle2, &
-particle3, &
-particle4, &
-angleCBA, &
-angleDCB, &
-k1, &
-k2, &
-k3, &
-k4, &
-k5, &
-k6)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaAngleTorsionForce) target
-            integer*4 index
-            integer*4 particle1
-            integer*4 particle2
-            integer*4 particle3
-            integer*4 particle4
-            real*8 angleCBA
-            real*8 angleDCB
-            real*8 k1
-            real*8 k2
-            real*8 k3
-            real*8 k4
-            real*8 k5
-            real*8 k6
-        end subroutine
-        subroutine OpenMM_AmoebaAngleTorsionForce_updateParametersInContext(target, context)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaAngleTorsionForce) target
-            Context context
-        end subroutine
-        function OpenMM_AmoebaAngleTorsionForce_usesPeriodicBoundaryConditions(target)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaAngleTorsionForce) target
-            integer*4 OpenMM_AmoebaAngleTorsionForce_usesPeriodicBoundaryConditions
         end function
 
         ! OpenMM::AmoebaBondForce
@@ -1219,141 +1100,6 @@ k2)
             integer*4 OpenMM_AmoebaStretchBendForce_usesPeriodicBoundaryConditions
         end function
 
-        ! OpenMM::AmoebaStretchTorsionForce
-        subroutine OpenMM_AmoebaStretchTorsionForce_create(result)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaStretchTorsionForce) result
-        end subroutine
-        subroutine OpenMM_AmoebaStretchTorsionForce_destroy(destroy)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaStretchTorsionForce) destroy
-        end subroutine
-        function OpenMM_AmoebaStretchTorsionForce_getNumStretchTorsions(target)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaStretchTorsionForce) target
-            integer*4 OpenMM_AmoebaStretchTorsionForce_getNumStretchTorsions
-        end function
-        function OpenMM_AmoebaStretchTorsionForce_addStretchTorsion(target, particle1, &
-particle2, &
-particle3, &
-particle4, &
-lengthBA, &
-lengthCB, &
-lengthDC, &
-k1, &
-k2, &
-k3, &
-k4, &
-k5, &
-k6, &
-k7, &
-k8, &
-k9)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaStretchTorsionForce) target
-            integer*4 particle1
-            integer*4 particle2
-            integer*4 particle3
-            integer*4 particle4
-            real*8 lengthBA
-            real*8 lengthCB
-            real*8 lengthDC
-            real*8 k1
-            real*8 k2
-            real*8 k3
-            real*8 k4
-            real*8 k5
-            real*8 k6
-            real*8 k7
-            real*8 k8
-            real*8 k9
-            integer*4 OpenMM_AmoebaStretchTorsionForce_addStretchTorsion
-        end function
-        subroutine OpenMM_AmoebaStretchTorsionForce_getStretchTorsionParameters(target, index, &
-particle1, &
-particle2, &
-particle3, &
-particle4, &
-lengthBA, &
-lengthCB, &
-lengthDC, &
-k1, &
-k2, &
-k3, &
-k4, &
-k5, &
-k6, &
-k7, &
-k8, &
-k9)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaStretchTorsionForce) target
-            integer*4 index
-            integer*4 particle1
-            integer*4 particle2
-            integer*4 particle3
-            integer*4 particle4
-            real*8 lengthBA
-            real*8 lengthCB
-            real*8 lengthDC
-            real*8 k1
-            real*8 k2
-            real*8 k3
-            real*8 k4
-            real*8 k5
-            real*8 k6
-            real*8 k7
-            real*8 k8
-            real*8 k9
-        end subroutine
-        subroutine OpenMM_AmoebaStretchTorsionForce_setStretchTorsionParameters(target, index, &
-particle1, &
-particle2, &
-particle3, &
-particle4, &
-lengthBA, &
-lengthCB, &
-lengthDC, &
-k1, &
-k2, &
-k3, &
-k4, &
-k5, &
-k6, &
-k7, &
-k8, &
-k9)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaStretchTorsionForce) target
-            integer*4 index
-            integer*4 particle1
-            integer*4 particle2
-            integer*4 particle3
-            integer*4 particle4
-            real*8 lengthBA
-            real*8 lengthCB
-            real*8 lengthDC
-            real*8 k1
-            real*8 k2
-            real*8 k3
-            real*8 k4
-            real*8 k5
-            real*8 k6
-            real*8 k7
-            real*8 k8
-            real*8 k9
-        end subroutine
-        subroutine OpenMM_AmoebaStretchTorsionForce_updateParametersInContext(target, context)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaStretchTorsionForce) target
-            Context context
-        end subroutine
-        function OpenMM_AmoebaStretchTorsionForce_usesPeriodicBoundaryConditions(target)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaStretchTorsionForce) target
-            integer*4 OpenMM_AmoebaStretchTorsionForce_usesPeriodicBoundaryConditions
-        end function
-
         ! OpenMM::AmoebaTorsionTorsionForce
         subroutine OpenMM_AmoebaTorsionTorsionForce_create(result)
             use OpenMM_Types; implicit none
@@ -1469,148 +1215,41 @@ grid)
         end function
         subroutine OpenMM_AmoebaVdwForce_setParticleParameters(target, particleIndex, &
 parentIndex, &
-vdwprType, &
 sigma, &
 epsilon, &
-reductionFactor, &
-lambda)
+reductionFactor)
             use OpenMM_Types; implicit none
             type (OpenMM_AmoebaVdwForce) target
             integer*4 particleIndex
             integer*4 parentIndex
-            integer*4 vdwprType
             real*8 sigma
             real*8 epsilon
             real*8 reductionFactor
-            real*8 lambda
         end subroutine
         subroutine OpenMM_AmoebaVdwForce_getParticleParameters(target, particleIndex, &
 parentIndex, &
-vdwprType, &
 sigma, &
 epsilon, &
-reductionFactor, &
-lambda)
+reductionFactor)
             use OpenMM_Types; implicit none
             type (OpenMM_AmoebaVdwForce) target
             integer*4 particleIndex
             integer*4 parentIndex
-            integer*4 vdwprType
             real*8 sigma
             real*8 epsilon
             real*8 reductionFactor
-            real*8 lambda
         end subroutine
         function OpenMM_AmoebaVdwForce_addParticle(target, parentIndex, &
-vdwprType, &
 sigma, &
 epsilon, &
-reductionFactor, &
-lambda)
+reductionFactor)
             use OpenMM_Types; implicit none
             type (OpenMM_AmoebaVdwForce) target
             integer*4 parentIndex
-            integer*4 vdwprType
             real*8 sigma
             real*8 epsilon
             real*8 reductionFactor
-            real*8 lambda
             integer*4 OpenMM_AmoebaVdwForce_addParticle
-        end function
-        subroutine OpenMM_AmoebaVdwForce_computeCombinedSigmaEpsilon(target)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-        end subroutine
-        function OpenMM_AmoebaVdwForce_getNumVdwprTypes(target)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            integer*4 OpenMM_AmoebaVdwForce_getNumVdwprTypes
-        end function
-        subroutine OpenMM_AmoebaVdwForce_setNumVdwprTypes(target, newNum)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            integer*4 newNum
-        end subroutine
-        function OpenMM_AmoebaVdwForce_getNewVdwprType(target, oldType)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            integer*4 oldType
-            integer*4 OpenMM_AmoebaVdwForce_getNewVdwprType
-        end function
-        function OpenMM_AmoebaVdwForce_getOldVdwprType(target, newType)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            integer*4 newType
-            integer*4 OpenMM_AmoebaVdwForce_getOldVdwprType
-        end function
-        subroutine OpenMM_AmoebaVdwForce_setOldVdwprType(target, newType, &
-oldType)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            integer*4 newType
-            integer*4 oldType
-        end subroutine
-        subroutine OpenMM_AmoebaVdwForce_resize(target, newSize)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            integer*4 newSize
-        end subroutine
-        subroutine OpenMM_AmoebaVdwForce_setVdwprParametersByOldTypes(target, oldtype1, &
-oldtype2, &
-combinedSigma, &
-combinedEpsilon)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            integer*4 oldtype1
-            integer*4 oldtype2
-            real*8 combinedSigma
-            real*8 combinedEpsilon
-        end subroutine
-        function OpenMM_AmoebaVdwForce_addVdwprByOldTypes(target, oldtype1, &
-oldtype2, &
-combinedSigma, &
-combinedEpsilon)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            integer*4 oldtype1
-            integer*4 oldtype2
-            real*8 combinedSigma
-            real*8 combinedEpsilon
-            integer*4 OpenMM_AmoebaVdwForce_addVdwprByOldTypes
-        end function
-        subroutine OpenMM_AmoebaVdwForce_setVdwprParameters(target, ntype1, &
-ntype2, &
-combinedSigma, &
-combinedEpsilon)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            integer*4 ntype1
-            integer*4 ntype2
-            real*8 combinedSigma
-            real*8 combinedEpsilon
-        end subroutine
-        subroutine OpenMM_AmoebaVdwForce_getVdwprParameters(target, ntype1, &
-ntype2, &
-combinedSigma, &
-combinedEpsilon)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            integer*4 ntype1
-            integer*4 ntype2
-            real*8 combinedSigma
-            real*8 combinedEpsilon
-        end subroutine
-        function OpenMM_AmoebaVdwForce_addVdwpr(target, ntype1, &
-ntype2, &
-combinedSigma, &
-combinedEpsilon)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            integer*4 ntype1
-            integer*4 ntype2
-            real*8 combinedSigma
-            real*8 combinedEpsilon
-            integer*4 OpenMM_AmoebaVdwForce_addVdwpr
         end function
         subroutine OpenMM_AmoebaVdwForce_setSigmaCombiningRule(target, sigmaCombiningRule)
             use OpenMM_Types; implicit none
@@ -1628,16 +1267,6 @@ combinedEpsilon)
             character(*) epsilonCombiningRule
         end subroutine
         subroutine OpenMM_AmoebaVdwForce_getEpsilonCombiningRule(target, result)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            character(*) result
-        end subroutine
-        subroutine OpenMM_AmoebaVdwForce_setFunctionalForm(target, functionalForm)
-            use OpenMM_Types; implicit none
-            type (OpenMM_AmoebaVdwForce) target
-            character(*) functionalForm
-        end subroutine
-        subroutine OpenMM_AmoebaVdwForce_getFunctionalForm(target, result)
             use OpenMM_Types; implicit none
             type (OpenMM_AmoebaVdwForce) target
             character(*) result
