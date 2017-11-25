@@ -1,0 +1,34 @@
+
+-direct
+
+-limitComments
+
+-skipDeprecated
+
+-runtime JNA   
+
+-mode StandaloneJar
+
+-package simtk.openmm
+
+-jar openmm-7.1.1.jar
+
+-I/usr/local/openmm/include
+
+-library OpenMM
+
+-libFile lib/libOpenMM.dylib
+-libFile lib/plugins/libOpenMMCPU.dylib
+-libFile lib/plugins/libOpenMMCuda.dylib
+-libFile lib/plugins/libOpenMMOpenCL.dylib
+
+include/OpenMMCWrapper.h
+
+-library OpenMMAmoeba
+
+-libFile lib/libOpenMMAmoeba.dylib
+-libFile lib/plugins/libOpenMMAmoebaCuda.dylib
+-libFile lib/plugins/libOpenMMAmoebaReference.dylib
+
+include/AmoebaOpenMMCWrapper.h
+
