@@ -1,13 +1,13 @@
 
-
 Java3D 1.6.0 (final) has been released (Dec. 15th 2016): 
 https://github.com/hharrison/java3d-core/releases/tag/1.6.0 and depends on JOGL v. 2.3.2.
+
+Java3D 1.6.0.1 is a build of Java3D 1.6.0 (final) from Doug Lyon that works on MacOSX JDK 9.
 
 "Pre" final release versions are labeled 1.6.1 - 1.6.4 and described below.
 Java3D 1.6.1 is from http://jogamp.org/deployment/java3d/1.6.0-pre9  and depends on JOGL v. 2.1.4.
 Java3D 1.6.2 is from http://jogamp.org/deployment/java3d/1.6.0-pre11 and depends on JOGL v. 2.2.0.
 Java3D 1.6.4 is from http://jogamp.org/deployment/java3d/1.6.0-pre12 and depends on JOGL v. 2.3.1.
-
 
 Java3D 1.7 development is underway, with the following comments from the developers:
 "The main feature of it is the addition of an OpenGLES2 pipeline, which will run on mobile devices and is "significantly" faster than the older pipeline. But it's far less tested that the 1.6.0 Harvey just released so unless you need performance or the new pipeline stick with 1.6.0 for now. Also it's not going to run on Android or any system that doesn't have the AWT sub system, that release is coming in the not too distant future."
