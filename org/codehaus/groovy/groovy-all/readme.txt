@@ -1,5 +1,5 @@
 
-Groovy 2.4.7.1 equivalent to 2.4.7, but with custom changes to the groovy.ui.view.MacOSXMenuBar class to overcome bugs when embedded within FFX.
+Groovy 2.5.0 is exactly equivalent to the 2.5.0 released version of Groovy.
 
-Groovy 2.5.0.1-SNAPSHOT is equivalent to 2.5.0.1, but with custom changes to the groovy.ui.view.MacOSXMenuBar class to overcome bugs when embedded within FFX.
+Groovy 2.5.0.1 is also exactly equivalent to the 2.5.0 released version of Groovy, however, it depends on a custom Groovy Console package 2.5.0.1 with an updated groovy.ui.view.MacOSXMenuBar class.
 
