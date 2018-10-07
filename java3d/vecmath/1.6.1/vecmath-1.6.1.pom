@@ -3,6 +3,6 @@
   <groupId>java3d</groupId>
   <artifactId>vecmath</artifactId>
   <name>Java3D Vector Math Library</name>
-  <version>1.6.1</version>
-  <url>https://java3d.dev.java.net</url>
+  <version>1.6.0</version>
+  <url>https://github.com/hharrison/java3d-core/releases/tag/1.6.1</url>
 </project>

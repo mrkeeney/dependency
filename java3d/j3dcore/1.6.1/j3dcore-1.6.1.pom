@@ -4,7 +4,7 @@
   <artifactId>j3dcore</artifactId>
   <name>Java3D Core Library</name>
   <version>1.6.1</version>
-  <url>https://java3d.dev.java.net</url>
+  <url>https://github.com/hharrison/java3d-core/releases/tag/1.6.1</url>
   <dependencies>
     <dependency>
       <groupId>java3d</groupId>
@@ -25,14 +25,9 @@
       <type>jar</type>
     </dependency>
     <dependency>
-      <groupId>org.jogamp.gluegen</groupId>
-      <artifactId>gluegen-rt-main</artifactId>
-      <version>2.1.4</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jogamp.jogl</groupId>
-      <artifactId>jogl-all-main</artifactId>
-      <version>2.1.4</version>
+      <groupId>org.jogamp</groupId>
+      <artifactId>jogamp-fat</artifactId>
+      <version>2.3.2.1</version>
     </dependency>
   </dependencies>
 </project>
