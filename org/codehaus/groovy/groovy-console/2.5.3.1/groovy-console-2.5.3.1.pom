@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.codehaus.groovy</groupId>
-  <artifactId>groovy-all</artifactId>
+  <artifactId>groovy-console</artifactId>
   <version>2.5.3.1</version>
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
   <name>Apache Groovy</name>
   <description>Groovy: A powerful, dynamic language for the JVM</description>
   <url>http://groovy-lang.org</url>
@@ -25,7 +24,7 @@
     <developer>
       <id>glaforge</id>
       <name>Guillaume Laforge</name>
-      <organization>org.apache.maven.model.Organization@79712098</organization>
+      <organization>org.apache.maven.model.Organization@a6ffe24</organization>
       <roles>
         <role>Project Manager</role>
         <role>Despot</role>
@@ -36,7 +35,7 @@
       <id>bob</id>
       <name>bob mcwhirter</name>
       <email>bob@werken.com</email>
-      <organization>org.apache.maven.model.Organization@7291219</organization>
+      <organization>org.apache.maven.model.Organization@23db88ae</organization>
       <roles>
         <role>Founder</role>
       </roles>
@@ -45,7 +44,7 @@
       <id>jstrachan</id>
       <name>James Strachan</name>
       <email>james@coredevelopers.com</email>
-      <organization>org.apache.maven.model.Organization@749bdd35</organization>
+      <organization>org.apache.maven.model.Organization@713a59bc</organization>
       <roles>
         <role>Founder</role>
       </roles>
@@ -53,7 +52,7 @@
     <developer>
       <id>joe</id>
       <name>Joe Walnes</name>
-      <organization>org.apache.maven.model.Organization@3ecdd1f4</organization>
+      <organization>org.apache.maven.model.Organization@76208e2f</organization>
       <roles>
         <role>Developer Emeritus</role>
       </roles>
@@ -61,7 +60,7 @@
     <developer>
       <id>skizz</id>
       <name>Chris Stevenson</name>
-      <organization>org.apache.maven.model.Organization@62bb2807</organization>
+      <organization>org.apache.maven.model.Organization@59e7379d</organization>
       <roles>
         <role>Developer Emeritus</role>
       </roles>
@@ -69,7 +68,7 @@
     <developer>
       <id>jamiemc</id>
       <name>Jamie McCrindle</name>
-      <organization>org.apache.maven.model.Organization@1edee920</organization>
+      <organization>org.apache.maven.model.Organization@2dc97aa5</organization>
       <roles>
         <role>Developer Emeritus</role>
       </roles>
@@ -77,7 +76,7 @@
     <developer>
       <id>mattf</id>
       <name>Matt Foemmel</name>
-      <organization>org.apache.maven.model.Organization@741e27a2</organization>
+      <organization>org.apache.maven.model.Organization@2c166103</organization>
       <roles>
         <role>Developer Emeritus</role>
       </roles>
@@ -129,7 +128,7 @@
       <id>jwilson</id>
       <name>John Wilson</name>
       <email>tug@wilson.co.uk</email>
-      <organization>org.apache.maven.model.Organization@268189bb</organization>
+      <organization>org.apache.maven.model.Organization@5f007b95</organization>
       <roles>
         <role>Developer Emeritus</role>
       </roles>
@@ -146,7 +145,7 @@
       <id>ckl</id>
       <name>Christiaan ten Klooster</name>
       <email>ckl@dacelo.nl</email>
-      <organization>org.apache.maven.model.Organization@1688289b</organization>
+      <organization>org.apache.maven.model.Organization@670ac44</organization>
       <roles>
         <role>Developer Emeritus</role>
       </roles>
@@ -155,7 +154,7 @@
       <id>goetze</id>
       <name>Steve Goetze</name>
       <email>goetze@dovetail.com</email>
-      <organization>org.apache.maven.model.Organization@7a8acf2</organization>
+      <organization>org.apache.maven.model.Organization@39753e6f</organization>
       <roles>
         <role>Developer Emeritus</role>
       </roles>
@@ -164,7 +163,7 @@
       <id>bran</id>
       <name>Bing Ran</name>
       <email>b55r@sina.com</email>
-      <organization>org.apache.maven.model.Organization@30376ce3</organization>
+      <organization>org.apache.maven.model.Organization@33b72f9f</organization>
       <roles>
         <role>Developer Emeritus</role>
       </roles>
@@ -173,7 +172,7 @@
       <id>jez</id>
       <name>Jeremy Rayner</name>
       <email>jeremy.rayner@gmail.com</email>
-      <organization>org.apache.maven.model.Organization@3b20f209</organization>
+      <organization>org.apache.maven.model.Organization@7c10d95f</organization>
       <roles>
         <role>Developer Emeritus</role>
       </roles>
@@ -199,7 +198,7 @@
       <id>russel</id>
       <name>Russel Winder</name>
       <email>russel@winder.org.uk</email>
-      <organization>org.apache.maven.model.Organization@18f66118</organization>
+      <organization>org.apache.maven.model.Organization@551583eb</organization>
       <roles>
         <role>Developer</role>
         <role>Founder of Gant</role>
@@ -217,7 +216,7 @@
       <id>cstein</id>
       <name>Christian Stein</name>
       <email>sormuras@gmx.de</email>
-      <organization>org.apache.maven.model.Organization@3d111b58</organization>
+      <organization>org.apache.maven.model.Organization@5397a574</organization>
       <roles>
         <role>Developer Emeritus</role>
       </roles>
@@ -226,7 +225,7 @@
       <id>mittie</id>
       <name>Dierk Koenig</name>
       <email>dierk.koenig@canoo.com</email>
-      <organization>org.apache.maven.model.Organization@7e33fda4</organization>
+      <organization>org.apache.maven.model.Organization@73be0007</organization>
       <roles>
         <role>Developer</role>
       </roles>
@@ -235,7 +234,7 @@
       <id>paulk</id>
       <name>Paul King</name>
       <email>paulk@asert.com.au</email>
-      <organization>org.apache.maven.model.Organization@2fbb4570</organization>
+      <organization>org.apache.maven.model.Organization@263e9bcb</organization>
       <roles>
         <role>Developer</role>
         <role>Despot</role>
@@ -298,7 +297,7 @@
       <id>jimwhite</id>
       <name>Jim White</name>
       <email>jim@pagesmiths.com</email>
-      <organization>org.apache.maven.model.Organization@4eda01c6</organization>
+      <organization>org.apache.maven.model.Organization@5cf9bbb7</organization>
       <roles>
         <role>Developer</role>
       </roles>
@@ -575,7 +574,7 @@
       <name>Marcin Grzejszczak</name>
     </contributor>
     <contributor>
-      <name>Pap Lőrinc</name>
+      <name>Pap L?rinc</name>
     </contributor>
     <contributor>
       <name>Guillaume Balaine</name>
@@ -656,111 +655,25 @@
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy</artifactId>
       <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-ant</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-cli-commons</artifactId>
-      <version>2.5.3</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-cli-picocli</artifactId>
       <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-console</artifactId>
-      <version>2.5.3.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-datetime</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-docgenerator</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-groovydoc</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-groovysh</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-jmx</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-json</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-jsr223</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-macro</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-nio</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-servlet</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-sql</artifactId>
-      <version>2.5.3</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-swing</artifactId>
       <version>2.5.3</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-templates</artifactId>
       <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-test</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-test-junit5</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-testng</artifactId>
-      <version>2.5.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-xml</artifactId>
-      <version>2.5.3</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
 </project>
