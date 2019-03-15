@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>edu.uiowa.jopenmm</groupId>
+    <artifactId>openmm-fat</artifactId>
+    <version>7.3.1</version>
+    <packaging>jar</packaging>
+    <name>OpenMM Java Wrappers</name>
+    <description>Java wrappers for the OpenMM API.</description>
+    <dependencies>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>${jna.version}</version>
+        </dependency>
+    </dependencies>
+    <properties>
+        <jna.version>4.1.0</jna.version>
+        <jar.version>3.1.0</jar.version>
+        <compiler.version>3.8.0</compiler.version>
+        <!-- Default locations for deploying the website, snapshot location and
+        release location. These can be over-ridden by a developer's
+        settings.xml -->
+        <website.repo>file:website</website.repo>
+        <snapshot.repo>file:lib</snapshot.repo>
+        <release.repo>file:release</release.repo>
+        <maven.javadoc.skip>false</maven.javadoc.skip>
+    </properties>
+    <build>
+        <defaultGoal>deploy</defaultGoal>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${jar.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compiler.version}</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${jar.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+    <distributionManagement>
+        <downloadUrl>https://github.com/mjschnie/jopenmm</downloadUrl>
+        <site>
+            <id>Website</id>
+            <name>Java OpenMM Wrapper Website Location</name>
+            <url>${website.repo}</url>
+        </site>
+        <snapshotRepository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>Snapshots</id>
+            <name>Local Maven SNAPSHOT Repository</name>
+            <url>${snapshot.repo}</url>
+        </snapshotRepository>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>Releases</id>
+            <name>Local Maven Release Repository</name>
+            <url>${release.repo}</url>
+        </repository>
+    </distributionManagement>
+</project>
