@@ -1,0 +1,7 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jogamp.java3d</groupId>
+  <artifactId>j3dutils</artifactId>
+  <name>Java3D Utilities</name>
+  <version>1.7.0</version>
+</project>

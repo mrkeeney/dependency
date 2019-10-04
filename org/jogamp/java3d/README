@@ -1,0 +1,7 @@
+
+Java3D Version Info.
+
+Java3D 1.7 development is underway, with the following comments from the developers:
+"The main feature of it is the addition of an OpenGLES2 pipeline, which will run on mobile devices and is "significantly" faster than the older pipeline. But it's far less tested that the 1.6.0 Harvey just released so unless you need performance or the new pipeline stick with 1.6.0 for now. Also it's not going to run on Android or any system that doesn't have the AWT sub system, that release is coming in the not too distant future."
+https://github.com/philjord/java3d-core/releases
+

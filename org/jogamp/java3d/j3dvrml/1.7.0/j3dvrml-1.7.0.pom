@@ -1,0 +1,8 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jogamp.java3d</groupId>
+  <artifactId>j3dvrml97</artifactId>
+  <name>Java3D VRML Loader</name>
+  <version>1.7.0</version>
+  <url>https://java3d.dev.java.net</url>
+</project>
